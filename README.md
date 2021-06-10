@@ -38,8 +38,10 @@ test. Something between the unit tests and the functional tests written by QA.
 If newman is installed globally, you'll need to install the module globally.
 
 ```sh
-npm -i -g @tmclnk/postman-report-cloudwatch-metrics newman
-newman run examples/cloudwatch-example.postman_collection.json --reporters @tmclnk/cloudwatch-metrics
+npm i -g newman
+npm i -g @tmclnk/newman-reporter-cloudwatch-metrics
+newman run https://raw.githubusercontent.com/tmclnk/newman-reporter-cloudwatch-metrics/master/examples/cloudwatch-example.postman_collection.json \
+  --reporters cli,@tmclnk/cloudwatch-metrics
 ```
 
 ### Specifying Metric Dimensions
@@ -48,10 +50,10 @@ You can add arbitrary dimensions to the output using `--reporter-cloudwatch-metr
 Any dashes in the name will be removed an the exported metric name will be CamelCased.
 
 ```sh
-newman run examples/cloudwatch-example.postman_collection.json \
+newman run https://raw.githubusercontent.com/tmclnk/newman-reporter-cloudwatch-metrics/master/examples/cloudwatch-example.postman_collection.json \
   --reporters @tmclnk/cloudwatch-metrics \
   --reporter-cloudwatch-metrics-dimension-environment=dev \
-  --reporter cloudwatch-metrics-dimension-pod=a
+  --reporter-cloudwatch-metrics-dimension-pod=a
 ```
 
 Think carefully when specifying dimensions! They will very quickly pollute your
