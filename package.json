@@ -1,12 +1,12 @@
 {
-  "name": "newman-reporter-cloudwatch-metrics",
+  "name": "@tmclnk/newman-reporter-cloudwatch-metrics",
   "version": "1.0.0",
   "description": "Exports AWS Cloudwatch Metrics events",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Tom McLaughlin",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^7.25.0",
@@ -15,5 +15,18 @@
   "dependencies": {
     "@aws-sdk/client-cloudwatch": "^3.14.0",
     "newman": "^5.2.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmclnk/newman-reporter-cloudwatch-metrics.git"
+  },
+  "keywords": [
+    "newman",
+    "postman",
+    "cloudwatch"
+  ],
+  "bugs": {
+    "url": "https://github.com/tmclnk/newman-reporter-cloudwatch-metrics/issues"
+  },
+  "homepage": "https://github.com/tmclnk/newman-reporter-cloudwatch-metrics#readme"
 }
