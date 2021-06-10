@@ -1,0 +1,4 @@
+*.swp
+logs/
+node_modules/
+test/
