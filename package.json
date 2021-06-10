@@ -1,0 +1,19 @@
+{
+  "name": "newman-reporter-metrics",
+  "version": "1.0.0",
+  "description": "Exports AWS Cloudwatch Metrics events",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.25.0",
+    "newman": "^5.2.3"
+  },
+  "dependencies": {
+    "@aws-sdk/client-cloudwatch": "^3.14.0",
+    "newman": "^5.2.3"
+  }
+}
