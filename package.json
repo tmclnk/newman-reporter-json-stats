@@ -10,7 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "eslint": "^7.25.0",
-    "newman": "^5.2.3"
+    "newman": "^5.2.3",
+    "semantic-release": "^17.4.3"
   },
   "dependencies": {
     "@aws-sdk/client-cloudwatch": "^3.18.0"
@@ -24,6 +25,12 @@
     "postman",
     "cloudwatch"
   ],
+  "release": {
+    "branches": [
+      "master",
+      "ci"
+    ]
+  },
   "bugs": {
     "url": "https://github.com/tmclnk/newman-reporter-cloudwatch-metrics/issues"
   },
