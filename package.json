@@ -1,5 +1,5 @@
 {
-  "name": "newman-reporter-metrics",
+  "name": "newman-reporter-cloudwatch-metrics",
   "version": "1.0.0",
   "description": "Exports AWS Cloudwatch Metrics events",
   "main": "index.js",
