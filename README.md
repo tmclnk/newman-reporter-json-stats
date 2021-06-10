@@ -66,6 +66,7 @@ be recognized from newman as well. I have successfully tested using `~/.aws/cred
 
 ## Related Links
 
+* [newman-reporter-cloudwatch-metrics node module](https://www.npmjs.com/package/@tmclnk/newman-reporter-cloudwatch-metrics)
 * [Postman](https://www.postman.com/)
 * [newman](https://github.com/postmanlabs/newman)
 * [newman-reporter-html](https://github.com/postmanlabs/newman-reporter-html)
