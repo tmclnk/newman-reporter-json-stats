@@ -99,15 +99,16 @@ module.exports = function (newman, options) {
             ],
             Namespace: "PostmanCanaries"
         }
-        // console.log(JSON.stringify(metric))
+        
+        console.log(JSON.stringify(metric))
     
-        // cloudwatch.send(new PutMetricDataCommand(metric), (err) => {
-        //     if (err) {
-        //         console.error(err, err.stack);
-        //         process.exitCode = 10
-        //     } else {
-        //         // successful response
-        //     }
-        // })
+        cloudwatch.send(new PutMetricDataCommand(metric), (err) => {
+            if (err) {
+                console.error(err, err.stack);
+                process.exitCode = 10
+            } else {
+                // successful response
+            }
+        })
     })
 }
