@@ -13,9 +13,7 @@
     "newman": "^5.2.3"
   },
   "dependencies": {
-    "@aws-sdk/client-cloudwatch": "^3.14.0",
-    "@tmclnk/newman-reporter-cloudwatch-metrics": "^1.0.0",
-    "newman": "^5.2.3"
+    "@aws-sdk/client-cloudwatch": "^3.18.0"
   },
   "repository": {
     "type": "git",
