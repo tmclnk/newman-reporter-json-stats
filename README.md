@@ -70,3 +70,4 @@ be recognized from newman as well. I have successfully tested using `~/.aws/cred
 * [newman](https://github.com/postmanlabs/newman)
 * [newman-reporter-html](https://github.com/postmanlabs/newman-reporter-html)
 * [Amazon CloudWatch Metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/working_with_metrics.html)
+* [semantic-release](https://github.com/semantic-release/semantic-release)
