@@ -17,9 +17,13 @@ src
 test
 examples
 CHANGELOG.md
+README.md
 .travis.yml
 .editorconfig
 .eslintignore
 .eslintrc
 .babelrc
 .gitignore
+
+# pipeline stuff
+.github
