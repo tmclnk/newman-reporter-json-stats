@@ -35,7 +35,8 @@ test. Something between the unit tests and the functional tests written by QA.
 
 ## Usage
 
-If newman is installed globally, you'll need to install the module globally.
+If newman is installed globally, you'll need to install the module globally. You will
+also need AWS Credentials with `cloudwatch:PutMetricData` permission.
 
 ```sh
 npm i -g newman
