@@ -1,13 +1,18 @@
 {
   "name": "@tmclnk/newman-reporter-cloudwatch-metrics",
-  "version": "1.0.0",
-  "description": "Exports AWS Cloudwatch Metrics events",
+  "version": "0.0.1",
+  "description": "Dumps verbose statistics",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pack": "npm pack",
+    "local-dev": "npm link && cd node_modules/newman && npm link @tmclnk/newman-reporter-cloudwatch-metrics",
+    "test": "node_modules/.bin/newman run examples/cloudwatch-example.postman_collection.json -r @tmclnk/cloudwatch-metrics"
   },
   "author": "Tom McLaughlin",
   "license": "ISC",
+  "peerDependencies": {
+    "newman": "^5.2.3"
+  },
   "devDependencies": {
     "eslint": "^7.25.0",
     "newman": "^5.2.3",
@@ -23,7 +28,7 @@
   "keywords": [
     "newman",
     "postman",
-    "cloudwatch"
+    "json"
   ],
   "release": {
     "branches": [
