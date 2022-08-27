@@ -106,11 +106,10 @@ newman.run(
     reporters: "@tmclnk/json-stats",
     verbose: true,
     silent: true
-  },
-    function (err, summary) {
-      // your code here!
-      console.log(summary.statistics);
-    }
+  }, function (err, summary) {
+    // your code here!
+    console.log(summary.statistics);
+  }
 );
 ```
 
