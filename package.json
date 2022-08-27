@@ -35,8 +35,10 @@
       "ci"
     ],
     "plugins": [
+      "@semantic-release/commit-analyzer",
       "@semantic-release/changelog",
-      "@semantic-release/git"
+      "@semantic-release/github",
+      "@semantic-release/npm"
     ]
   },
   "bugs": {
