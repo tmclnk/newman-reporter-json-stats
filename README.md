@@ -89,7 +89,7 @@ Units are milliseconds, bytes, or epoch milliseconds.
 - `timing.offset` is milliseconds from the start of the request
 - `timing.phases` is milliseconds of each phase
 
-## As a Library
+## Library Usage
 
 You can use this newman and this module as a library. 
 This might be useful if you want to roll a standalone app with simplified syntax
