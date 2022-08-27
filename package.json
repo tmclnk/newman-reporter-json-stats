@@ -1,11 +1,10 @@
 {
   "name": "@tmclnk/newman-reporter-json-stats",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Dumps verbose statistics",
   "main": "index.js",
   "scripts": {
     "pack": "npm pack",
-    "publish": "npm publish --access public",
     "local-dev": "npm link && cd node_modules/newman && npm link @tmclnk/newman-reporter-json-stats",
     "test": "node_modules/.bin/newman run examples/cloudwatch-example.postman_collection.json -r @tmclnk/json-stats --verbose"
   },
