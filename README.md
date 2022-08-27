@@ -61,6 +61,11 @@ newman run https://raw.githubusercontent.com/tmclnk/newman-reporter-json-stats/m
 ]
 ```
 
+Units are milliseconds, bytes, or epoch milliseconds.
+
+- `offset` is milliseconds from the start of the request
+- `timingPhases` is milliseconds of each phase
+
 ## Rationale - Continuous Testing
 
 Postman is great for quickly writing tests against API's. It lets us centralize
