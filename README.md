@@ -4,16 +4,20 @@ Dumps detailed statistics as json.
 
 ## Requirements
 
-* npm
-* newman
+* [npm](https://docs.npmjs.com/cli/v8/configuring-npm/install)
 
 ## Usage
 
-If newman is installed globally, you'll need to install the module globally.
+Install newman and the reporter module.
 
-```sh
+```shell
 npm i -g newman
 npm i -g @tmclnk/newman-reporter-json-stats
+```
+
+Once installed, you can use `@tmclnk/json-stats` like any other reporter, e.g.
+
+```shell
 newman run https://raw.githubusercontent.com/tmclnk/newman-reporter-json-stats/main/examples/postman_collection.json \
   --reporters @tmclnk/json-stats
 ```
@@ -68,6 +72,22 @@ we quickly know if they are failing, or if we have something misconfigured.
 
 We can use the Postman tests we are writing anyway to act as a rudimentary integration
 test. Something between the unit tests and the functional tests written by QA.
+
+## Troubleshooting
+
+```sh
+newman: could not find "@tmclnk/json-stats" reporter
+ensure that the reporter is installed in the same directory as newman
+please install reporter using npm
+```
+
+If you get the above error, and you installed newman using a package
+manager (brew, apt, yum, chocolatey), you may need to uninstall newman and re-install
+using npm.
+
+```shell
+npm i -g newman
+```
 
 ## Related Links
 
