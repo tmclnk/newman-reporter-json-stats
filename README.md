@@ -101,15 +101,17 @@ See [example.js].
 const newman = require("newman");
 
 newman.run(
-  {
-    collection: require("./postman_collection.json"),
-    reporters: "@tmclnk/json-stats",
-    verbose: true,
-    silent: true
-  }, function (err, summary) {
-    // your code here!
-    console.log(summary.statistics);
-  }
+    {
+        collection: require("./postman_collection_env.json"),
+        reporters: "@tmclnk/json-stats",
+        envVar: [{ key: "baseUrl", value: "https://www.google.com" }],
+        verbose: true, // required to get newman to generate add'l statistics
+        silent: true, // don't let the reporter write to stdout
+    },
+    function (err, summary) {
+        // your code here!
+        console.log(summary.statistics);
+    }
 );
 ```
 
