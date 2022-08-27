@@ -27,7 +27,6 @@ The commit contains the following structural elements, to communicate intent to 
 * types other than fix: and feat: are allowed, for example @commitlint/config-conventional (based on the the Angular convention) recommends build:, chore:, ci:, docs:, style:, refactor:, perf:, test:, and others.
 * BREAKING CHANGE: a commit that has a footer BREAKING CHANGE:, or appends a ! after the type/scope, introduces a breaking API change (correlating with MAJOR in Semantic Versioning). A BREAKING CHANGE can be part of commits of any type.
 
-
 ## Release
 
 The [semantic-release] plugin will make a new github release and upload the package to npm.
@@ -57,6 +56,6 @@ make sure two-factor auth is `auth-only`. You can check this with `npm profile g
 * [newman-reporter-json-stats node module](https://www.npmjs.com/package/@tmclnk/newman-reporter-json-stats)
 * [newman](https://github.com/postmanlabs/newman)
 * [newman-reporter-html](https://github.com/postmanlabs/newman-reporter-html)
-* [semantic-release](https://github.com/semantic-release/semantic-release)
+* [semantic-release]
 
 [semantic-release]: https://github.com/semantic-release/semantic-release
