@@ -8,8 +8,7 @@
 
 ## Usage
 
-If newman is installed globally, you'll need to install the module globally. You will
-also need AWS Credentials with `cloudwatch:PutMetricData` permission.
+If newman is installed globally, you'll need to install the module globally.
 
 ```sh
 npm i -g newman
