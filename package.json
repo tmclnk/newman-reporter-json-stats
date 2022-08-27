@@ -1,6 +1,6 @@
 {
   "name": "@tmclnk/newman-reporter-json-stats",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Dumps verbose statistics",
   "main": "index.js",
   "scripts": {
@@ -48,5 +48,11 @@
     "postman-request": "^2.88.1-postman.31",
     "pretty-ms": "7.0.1",
     "word-wrap": "1.2.3"
-  }
+  },
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/npm",
+    "@semantic-release/git"
+  ]
 }
