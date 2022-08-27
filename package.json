@@ -38,6 +38,7 @@
       "@semantic-release/commit-analyzer",
       "@semantic-release/changelog",
       "@semantic-release/github",
+      "@semantic-release/git",
       "@semantic-release/npm"
     ]
   },
