@@ -47,6 +47,7 @@
   },
   "homepage": "https://github.com/tmclnk/newman-reporter-json-stats#readme",
   "dependencies": {
+    "@semantic-release/release-notes-generator": "^10.0.3",
     "chardet": "1.4.0",
     "colors": "^1.4.0",
     "filesize": "8.0.7",
