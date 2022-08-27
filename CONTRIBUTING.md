@@ -43,7 +43,7 @@ npm login
 export GH_TOKEN=YOUR_GITHUB_TOKEN
 ```
 
-```
+```shell
 npx semantic-release --no-ci
 ```
 
