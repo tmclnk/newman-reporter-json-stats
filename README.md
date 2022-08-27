@@ -105,12 +105,12 @@ newman.run(
     collection: require("./postman_collection.json"),
     reporters: "@tmclnk/json-stats",
     verbose: true,
+    silent: true
   },
-  function (err) {
-    if (err) {
-      throw err;
+    function (err, summary) {
+      // your code here!
+      console.log(summary.statistics);
     }
-  }
 );
 ```
 

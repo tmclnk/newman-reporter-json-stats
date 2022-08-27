@@ -12,9 +12,19 @@ newman.run(
   {
     collection: require("./postman_collection.json"),
     reporters: "@tmclnk/json-stats",
-    verbose: true,
+    verbose: true, // required to get newman to generate add'l statistics
+    silent: true, // don't let the reporter write to stdout
   },
-  function (err) {
+  /**
+   *
+   * @param err
+   * @param summary
+   * @param summary.statistics {Array} array of statistics, matching what gets printed when you run @tmclnk/json-stats
+   * from the command line.
+   */
+  function (err, summary) {
+    // TODO you can access summary.statistics here
+    console.log(summary.statistics);
     if (err) {
       throw err;
     }
