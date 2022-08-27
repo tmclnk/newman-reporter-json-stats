@@ -22,7 +22,7 @@ newman run https://raw.githubusercontent.com/tmclnk/newman-reporter-json-stats/m
   --reporters @tmclnk/json-stats --verbose
 ```
 
-Note that the verbose flag is REQUIRED.
+Note that the `--verbose` flag is REQUIRED.
 
 ## Output
 
