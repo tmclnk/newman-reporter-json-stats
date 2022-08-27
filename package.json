@@ -1,6 +1,6 @@
 {
   "name": "@tmclnk/newman-reporter-json-stats",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "Dumps verbose timing statistics",
   "main": "index.js",
   "scripts": {
