@@ -65,8 +65,8 @@ Note that the verbose flag is REQUIRED.
 
 Units are milliseconds, bytes, or epoch milliseconds.
 
-- `offset` is milliseconds from the start of the request
-- `timingPhases` is milliseconds of each phase
+- `timing.offset` is milliseconds from the start of the request
+- `timing.phases` is milliseconds of each phase
 
 ## Rationale - Continuous Testing
 
