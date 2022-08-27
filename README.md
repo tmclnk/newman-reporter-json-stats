@@ -71,8 +71,6 @@ test. Something between the unit tests and the functional tests written by QA.
 
 ## Related Links
 
-* [newman-reporter-json-stats node module](https://www.npmjs.com/package/@tmclnk/newman-reporter-json-stats)
-* [Postman](https://www.postman.com/)
+* [@tmclnk/json-stats](https://www.npmjs.com/package/@tmclnk/newman-reporter-json-stats)
+* [postman](https://www.postman.com/)
 * [newman](https://github.com/postmanlabs/newman)
-* [newman-reporter-html](https://github.com/postmanlabs/newman-reporter-html)
-* [semantic-release](https://github.com/semantic-release/semantic-release)
