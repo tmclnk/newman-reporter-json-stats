@@ -1,25 +1,29 @@
 # Newman JSON Stats Reporter
 
-Dumps detailed statistics as json.
+Dumps detailed statistics as json, including detailed breakdowns of timings 
+like you get from the `cli` reporter. This includes dns lookup,
+tcp and ssl handshake times, download time, and processing time.
 
-## Requirements
+## Getting Started 
 
-* [npm](https://docs.npmjs.com/cli/v8/configuring-npm/install)
+You'll need [npm](https://docs.npmjs.com/cli/v8/configuring-npm/install).
 
-## Usage
-
-Install newman and the reporter module.
+Install [newman] and the [@tmclnk/json-stats] reporter.
 
 ```shell
 npm i -g newman
 npm i -g @tmclnk/newman-reporter-json-stats
 ```
 
-Once installed, you can use `@tmclnk/json-stats` like any other reporter, e.g.
+## Usage
+
+Once the `@tmclnk/newman-reporter-json-stats` npm module is installed, it is referenced from newman
+as `@tmclnk/json-stats`.
 
 ```shell
 newman run https://raw.githubusercontent.com/tmclnk/newman-reporter-json-stats/main/examples/postman_collection.json \
-  --reporters @tmclnk/json-stats --verbose
+  --reporters @tmclnk/json-stats \
+  --verbose
 ```
 
 Note that the `--verbose` flag is REQUIRED.
@@ -112,9 +116,11 @@ npm i -g newman
 
 ## Related Links
 
-* [@tmclnk/json-stats](https://www.npmjs.com/package/@tmclnk/newman-reporter-json-stats)
-* [newman](https://github.com/postmanlabs/newman)
-* [postman](https://www.postman.com/)
+* [@tmclnk/json-stats]
+* [newman]
+* [postman]
 
-
+[@tmclnk/json-stats]: https://www.npmjs.com/package/@tmclnk/newman-reporter-json-stats
+[postman]: https://www.postman.com/
+[newman]: https://github.com/postmanlabs/newman
 [postman_collection_env.json]: ./examples/postman_collection_env.json
