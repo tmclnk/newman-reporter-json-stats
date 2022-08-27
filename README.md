@@ -115,18 +115,6 @@ newman.run(
 );
 ```
 
-## Rationale - Continuous Testing
-
-Postman is great for quickly writing tests against API's. It lets us centralize
-authentication logic, seamlessly handles cookies, has built-in testing, and
-good support for externalizing Environment variables.
-
-So good, in fact, that we sometimes want to just put our assertions on blast so that
-we quickly know if they are failing, or if we have something misconfigured.
-
-We can use the Postman tests we are writing anyway to act as a rudimentary integration
-test. Something between the unit tests and the functional tests written by QA.
-
 ## Troubleshooting
 
 ```sh
