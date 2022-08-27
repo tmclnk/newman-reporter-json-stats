@@ -1,6 +1,6 @@
 {
   "name": "@tmclnk/newman-reporter-json-stats",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "Dumps verbose timing statistics",
   "main": "index.js",
   "scripts": {
@@ -52,7 +52,6 @@
   },
   "homepage": "https://github.com/tmclnk/newman-reporter-json-stats#readme",
   "dependencies": {
-
     "lodash": "4.17.21",
     "postman-collection": "^4.1.5",
     "postman-request": "^2.88.1-postman.31"
