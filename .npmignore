@@ -24,8 +24,9 @@ README.md
 .eslintrc
 .babelrc
 .gitignore
+newman
 
 # pipeline stuff
 .github
-
+*tgz
 .idea
