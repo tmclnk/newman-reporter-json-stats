@@ -18,7 +18,7 @@ npm i -g newman
 npm i -g @tmclnk/newman-reporter-json-stats
 ```
 
-## Usage
+## Command Line Usage
 
 Once the `@tmclnk/newman-reporter-json-stats` npm module is installed, it is referenced from newman
 as `@tmclnk/json-stats`.
@@ -89,6 +89,31 @@ Units are milliseconds, bytes, or epoch milliseconds.
 - `timing.offset` is milliseconds from the start of the request
 - `timing.phases` is milliseconds of each phase
 
+## As a Library
+
+You can use this newman and this module as a library. 
+This might be useful if you want to roll a standalone app with simplified syntax
+or baked-in collections.
+
+See [example.js].
+
+```javascript
+const newman = require("newman");
+
+newman.run(
+  {
+    collection: require("./postman_collection.json"),
+    reporters: "@tmclnk/json-stats",
+    verbose: true,
+  },
+  function (err) {
+    if (err) {
+      throw err;
+    }
+  }
+);
+```
+
 ## Rationale - Continuous Testing
 
 Postman is great for quickly writing tests against API's. It lets us centralize
@@ -127,3 +152,4 @@ npm i -g newman
 [postman]: https://www.postman.com/
 [newman]: https://github.com/postmanlabs/newman
 [postman_collection_env.json]: ./examples/postman_collection_env.json
+[example.js]: ./examples/example.js
