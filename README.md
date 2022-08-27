@@ -15,7 +15,7 @@ If newman is installed globally, you'll need to install the module globally.
 npm i -g newman
 npm i -g @tmclnk/newman-reporter-json-stats
 newman run https://raw.githubusercontent.com/tmclnk/newman-reporter-json-stats/master/examples/cloudwatch-example.postman_collection.json \
-  --reporters cli,@tmclnk/json-stats
+  --reporters @tmclnk/json-stats
 ```
 
 ## Rationale - Continuous Testing
