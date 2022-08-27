@@ -19,8 +19,10 @@ Once installed, you can use `@tmclnk/json-stats` like any other reporter, e.g.
 
 ```shell
 newman run https://raw.githubusercontent.com/tmclnk/newman-reporter-json-stats/main/examples/postman_collection.json \
-  --reporters @tmclnk/json-stats
+  --reporters @tmclnk/json-stats --verbose
 ```
+
+Note that the verbose flag is REQUIRED.
 
 ## Output
 
