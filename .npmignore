@@ -6,7 +6,7 @@ coverage
 .nyc_output
 
 # Dependency directories
-node_modules
+# node_modules
 
 # npm package lock
 package-lock.json
