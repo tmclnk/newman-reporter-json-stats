@@ -8,7 +8,8 @@
     "local-dev": "npm link && cd node_modules/newman && npm link @tmclnk/newman-reporter-json-stats",
     "prettier": "npm run prettier",
     "semantic-release": "npx semantic-release --no-ci",
-    "test": "node_modules/.bin/newman run examples/postman_collection.json -r @tmclnk/json-stats --verbose"
+    "test": "node_modules/.bin/newman run examples/postman_collection.json -r @tmclnk/json-stats --verbose",
+    "test-env": "node_modules/.bin/newman run examples/postman_collection_env.json -r @tmclnk/json-stats --env-var 'baseUrl=https://www.devobsessed.com' --verbose"
   },
   "author": "Tom McLaughlin",
   "license": "ISC",

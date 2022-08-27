@@ -24,6 +24,20 @@ newman run https://raw.githubusercontent.com/tmclnk/newman-reporter-json-stats/m
 
 Note that the `--verbose` flag is REQUIRED.
 
+### Variables
+
+Use `--env-var "key=value"` to pass variables to your collection. For example, [postman_collection_env.json] uses
+a `{{baseUrl}}` parameter to construct its urls.
+
+![env-screenshot](./docs/env_screenshot.png)
+
+```shell
+newman run https://raw.githubusercontent.com/tmclnk/newman-reporter-json-stats/main/examples/postman_collection_env.json \
+  --reporters @tmclnk/json-stats \
+  --env-var "baseUrl=https://www.google.com" \
+  --verbose
+```
+
 ## Output
 
 ```json
@@ -99,5 +113,8 @@ npm i -g newman
 ## Related Links
 
 * [@tmclnk/json-stats](https://www.npmjs.com/package/@tmclnk/newman-reporter-json-stats)
-* [postman](https://www.postman.com/)
 * [newman](https://github.com/postmanlabs/newman)
+* [postman](https://www.postman.com/)
+
+
+[postman_collection_env.json]: ./examples/postman_collection_env.json
