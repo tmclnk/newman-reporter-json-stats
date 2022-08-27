@@ -1,10 +1,10 @@
-/*
+/**
  * Demonstrates how to use newman as a library.
  * For this to work, you need to have newman and @tmclnk/newman-reporter-json-stats
  * as "dependencies" in your project.
  *
- * See https://github.com/postmanlabs/newman#using-newman-as-a-library
- * See https://github.com/postmanlabs/newman#api-reference
+ * @link https://github.com/postmanlabs/newman#using-newman-as-a-library
+ * @link https://github.com/postmanlabs/newman#api-reference
  */
 const newman = require("newman");
 
