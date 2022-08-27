@@ -10,8 +10,9 @@ const newman = require("newman");
 
 newman.run(
   {
-    collection: require("./postman_collection.json"),
+    collection: require("./postman_collection_env.json"),
     reporters: "@tmclnk/json-stats",
+    envVar: [{ key: "baseUrl", value: "https://www.google.com" }],
     verbose: true, // required to get newman to generate add'l statistics
     silent: true, // don't let the reporter write to stdout
   },
