@@ -1,5 +1,6 @@
 # Newman JSON Stats Reporter
 
+Dumps detailed statistics as json.
 
 ## Requirements
 
@@ -28,22 +29,6 @@ we quickly know if they are failing, or if we have something misconfigured.
 
 We can use the Postman tests we are writing anyway to act as a rudimentary integration
 test. Something between the unit tests and the functional tests written by QA.
-
-
-### Specifying Metric Dimensions
-
-You can add arbitrary dimensions to the output using `--reporter-json-stats-dimension-<dimension-name>`.
-Any dashes in the name will be removed an the exported metric name will be CamelCased.
-
-```sh
-newman run https://raw.githubusercontent.com/tmclnk/newman-reporter-json-stats/master/examples/cloudwatch-example.postman_collection.json \
-  --reporters @tmclnk/json-stats
-```
-
-Think carefully when specifying dimensions! They will very quickly pollute your
-CloudWatch Metrics namespace, and they can't be removed. Additionally, you will be billed
-by AWS on a per-metric basis, so being very fine grained could increase your AWS costs.
-
 
 ## Related Links
 
