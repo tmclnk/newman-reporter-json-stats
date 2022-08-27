@@ -1,6 +1,9 @@
 # Newman JSON Stats Reporter
 
-Dumps detailed statistics as json, including detailed breakdowns of timings 
+A reporter for [newman], the command-line [postman] runner.
+
+This reporter prints detailed statistics as json, 
+including detailed breakdowns of timings 
 like you get from the `cli` reporter. This includes dns lookup,
 tcp and ssl handshake times, download time, and processing time.
 
