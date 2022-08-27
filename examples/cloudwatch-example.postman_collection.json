@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "objectpartners.com",
+			"name": "devobsessed.com",
 			"event": [
 				{
 					"listen": "test",
@@ -28,11 +28,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://www.objectpartners.com",
+					"raw": "https://www.devobsessed.com",
 					"protocol": "https",
 					"host": [
 						"www",
-						"objectpartners",
+						"devobsessed",
 						"com"
 					]
 				}
