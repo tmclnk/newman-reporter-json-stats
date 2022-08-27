@@ -14,7 +14,6 @@
     "newman": "^5.2.3"
   },
   "devDependencies": {
-    "eslint": "^7.25.0",
     "newman": "^5.2.3",
     "semantic-release": "^17.4.3"
   },
