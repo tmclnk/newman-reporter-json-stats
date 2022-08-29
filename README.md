@@ -117,7 +117,7 @@ newman.run(
 
 ## Troubleshooting
 
-```sh
+```text
 newman: could not find "@tmclnk/json-stats" reporter
 ensure that the reporter is installed in the same directory as newman
 please install reporter using npm
